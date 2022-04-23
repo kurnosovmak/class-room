@@ -39,7 +39,7 @@ class Student extends Model
 {
     use HasFactory, Sortable, Filterable;
 
-    protected array $guarded = ['id'];
+    protected $guarded = ['id'];
 
     public function scopeSearch(Builder $query,string $text): void
     {

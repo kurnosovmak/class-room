@@ -39,7 +39,7 @@ class Classroom extends Model
 {
     use HasFactory, Sortable, Filterable;
 
-    protected array $guarded = ['id'];
+    protected $guarded = ['id'];
 
     public static function boot()
     {

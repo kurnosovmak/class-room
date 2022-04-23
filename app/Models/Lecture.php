@@ -38,7 +38,7 @@ class Lecture extends Model
 {
     use HasFactory, Filterable, Sortable;
 
-    protected array $guarded = ['id'];
+    protected $guarded = ['id'];
 
     public static function boot()
     {
